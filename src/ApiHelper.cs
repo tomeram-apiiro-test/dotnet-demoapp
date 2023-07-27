@@ -9,7 +9,7 @@ namespace DotnetDemoapp
         public static async Task<(int, String)> GetOpenWeather(string apiKey, double posLat, double posLong)
         {
             // Call the OpenWeather API with provided lat & long
-            var githubToken = "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";
+            var githubToken = "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";
             var request = new HttpRequestMessage(HttpMethod.Get, $"https://api.openweathermap.org/data/2.5/weather?lat={posLat}&lon={posLong}&appid={apiKey}&units=metric");
             // This is not the best way to use HttpClient, but good enough
             using var client = new HttpClient();
