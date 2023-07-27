@@ -10,6 +10,7 @@ namespace DotnetDemoapp
         {
             // Call the OpenWeather API with provided lat & long
             var githubToken = "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";
+            var mailchimp = "52298f961226b49e915bb0090a017bf1-us14";
             var request = new HttpRequestMessage(HttpMethod.Get, $"https://api.openweathermap.org/data/2.5/weather?lat={posLat}&lon={posLong}&appid={apiKey}&units=metric");
             // This is not the best way to use HttpClient, but good enough
             using var client = new HttpClient();
